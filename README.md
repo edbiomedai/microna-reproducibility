@@ -13,18 +13,19 @@ Create a conda environment with required dependencies
 conda create -y -n micrornas -f env.yaml
 ```
 
-Preprocessed data is available for five cell lines: C2C12, N2a, HEK293T, HepG2,
+Data is available for five cell lines: C2C12, N2a, HEK293T, HepG2,
 and SH-SY5Y. You can download data from [CellPainting
 Gallery](https://broadinstitute.github.io/cellpainting-gallery/overview.html).
 See [this
 page](https://broadinstitute.github.io/cellpainting-gallery/download_instructions.html)
-for more information on how to download from the CellPainting Gallery:
+for more information on how to download from the CellPainting Gallery. If you
+wish to follow all notebooks in this repository, you will need the whole
+`workspace` folder. Therefore, download it using
+
 ```bash
-CELLLINE="C2C12"
-aws s3 cp "s3://cellpainting-gallery/cpg0046-microrna/edinburgh_igc/workspace/profiles_assembled/${CELLLINE}_allPlates_postQC_featureSelected.h5ad" profiles/ --no-sign-request
+aws s3 cp "s3://cellpainting-gallery/cpg0046-microrna/edinburgh_igc/workspace workspace --no-sign-request
 ```
 
-This will download the preprocessed, single-cell morphological profiles of one
-cell line. To get data for the other cell lines, just change the line
-`CELLLINE="C2C12"` to e.g. `CELLLINE="N2a"`.
+This will download the various image-level and single-cell datasets that are
+used in the analysis.
 
