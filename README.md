@@ -11,7 +11,7 @@ The notebooks herein aim at reproducibility, but are not an introduction to the
 field or scmorph. For those, please see
 https://doi.org/10.1038/s44320-026-00197-7 and https://scmorph.readthedocs.io/.
 
-To get started with this repository, we first need to make sure that git and
+To get started with this repository, we first need to make sure that git, aws and
 conda are available. Then, we will download the repository's contents, create a
 conda environment, and download the required data.
 
@@ -40,6 +40,7 @@ Prerequisites
 - Install miniconda, if you have not already:
   https://www.anaconda.com/download/success?reg=skipped
 - If you are on Windows, set up git: https://git-scm.com/install/windows
+- Install aws cli: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 Setup
 ---
